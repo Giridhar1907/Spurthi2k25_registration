@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:hint="Spurthi 2025"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Name Field -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curved_transparent_back"
+            android:hint="Enter Name"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColorHint="@color/white" />
+
+        <!-- Registration Number Field -->
+        <EditText
+            android:id="@+id/etRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curved_transparent_back"
+            android:hint="Enter Registration No"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:maxLength="10"
+            android:padding="12dp"
+            android:textColorHint="@color/white" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curved_transparent_back"
+            android:hint="Enter Email"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="@color/Android_green" />
+
+        <!-- Year Field -->
+        <EditText
+            android:id="@+id/etYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curved_transparent_back"
+            android:hint="Enter Year"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="12dp"
+            android:textColorHint="@color/Android_green" />
+
+        <!-- Branch Field -->
+        <EditText
+            android:id="@+id/etBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/curved_transparent_back"
+            android:hint="Enter Branch"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColorHint="@color/Android_green" />
+
+        <!-- Section Field -->
+        <EditText
+            android:id="@+id/etSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curved_transparent_back"
+            android:hint="Enter Section"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColorHint="@color/Android_green" />
+        <!-- Mobile Number -->
+        <EditText
+            android:id="@+id/numberSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curved_transparent_back"
+            android:hint="Enter Mobile Number"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:maxLength="10"
+            android:padding="12dp"
+            android:textColorHint="@color/Android_green" />
+
+        <!-- QR Scanner Button -->
+        <Button
+            android:id="@+id/btnScanQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@android:drawable/ic_menu_camera"
+            android:background="@drawable/curved_transparent_back"
+            android:padding="12dp"
+            android:text="Scan QR Code"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+        <!-- QR Result Box -->
+        <EditText
+            android:id="@+id/tvQRResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/curved_transparent_back"
+            android:padding="12dp"
+            android:hint="QR Code Result will appear here"
+            android:textColor="@color/white"
+            android:textColorHint="@color/Android_green"
+            android:textSize="16sp" />
+
+        <!-- Categories Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="12dp"
+            android:text="Combos Available"
+            android:textColor="@color/Android_green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_transparent_back"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <CheckBox
+                android:id="@+id/cbCategory1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=" Combo 1(2 tech + 2 nontech)"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/cbCategory2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Combo 2(3 tech + 3 nontech)"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/cbCategory3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Combo 3(3 events + VR)"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/cbCategory4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Combo 4(Full Combo)"
+                android:textColor="@color/Android_green" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="12dp"
+            android:text="Individual Events"
+            android:textColor="@color/Android_green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_transparent_back"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <CheckBox
+                android:id="@+id/Talkathon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="TALKATHON"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Aidojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Ai DOJO"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Codewars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="CODE WARS"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Ideapresentation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="IDEA PRESENTATION"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/webverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="WEBVERSE"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Acegot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="ACE GOT TALENT"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Cricketauction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="CRICKET AUCTION"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Astroarcade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="ASTRO ARCADE"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Boxoffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="BOX OFFICE"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Esports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="ESPORTS"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Vr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="VR (Virtual Reality)"
+                android:textColor="@color/Android_green" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total Amount: ₹0"
+            android:textColor="@color/Android_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="12dp"
+            android:text="Payment Mode"
+            android:textColor="@color/Android_green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_transparent_back"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <CheckBox
+                android:id="@+id/Online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="ONLINE"
+                android:textColor="@color/Android_green" />
+
+            <CheckBox
+                android:id="@+id/Offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="OFFLINE"
+                android:textColor="@color/Android_green" />
+
+            <TextView
+                android:id="@+id/payment_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Payment Mode :"
+                android:textColor="@color/Android_green" />
+        </LinearLayout>
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/curved_transparent_back"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
